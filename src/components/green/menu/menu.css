@@ -1,6 +1,8 @@
-div.manu{
+div.menu{
     width: 2rem;
-    height: 0.3rem;
-    color: lightgreen;
+    height: 1rem;
+    background-color: white;
     border-radius: 1rem;
+    align-items: center center;
+    text-align: center;
 }

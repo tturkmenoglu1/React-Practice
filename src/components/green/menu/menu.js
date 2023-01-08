@@ -4,7 +4,7 @@ import "./menu.css"
 const Menu = () => {
   return (
     <div className='menu'>
-
+         
     </div>
   )
 }
