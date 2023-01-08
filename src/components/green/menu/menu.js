@@ -1,8 +1,11 @@
 import React from 'react'
+import "./menu.css"
 
 const Menu = () => {
   return (
-    <div style={{width:"2rem",height:"0.3rem",color:"lightgreen",borderRadius:"1rem"}}></div>
+    <div className='menu'>
+
+    </div>
   )
 }
 

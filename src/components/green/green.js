@@ -1,11 +1,12 @@
 import React from 'react'
 import Menu from './menu/menu'
 import Logo from './logo/logo'
+import "./green.css"
 
 
 const Green = () => {
   return (
-      <div style={{backgroundColor:"lime",height:"10rem",borderRadius:"2rem",margin:"2rem 6rem"}}>
+      <div className='green'>
         <Menu/>
         <Logo/>
       </div>
