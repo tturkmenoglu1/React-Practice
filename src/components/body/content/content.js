@@ -1,9 +1,12 @@
 import React from 'react'
 import "./content.css"
+import Items from './itesms/items'
 
 const Content = () => {
   return (
-    <div className='content'></div>
+    <div className='content'>
+      <Items/>
+    </div>
   )
 }
 

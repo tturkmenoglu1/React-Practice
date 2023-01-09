@@ -1,0 +1,13 @@
+div.items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-around;
+}
+
+div.items .ex{
+    width: 15rem;
+    height: 15rem;
+    background-color: rgb(236, 133, 142);
+    border-radius: 1rem;
+}
