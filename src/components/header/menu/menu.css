@@ -1,0 +1,11 @@
+div.menu{
+    display: flex;
+}
+
+div.menu .ex{
+    width: 5rem;
+    height: 1rem;
+    background-color: rgb(180, 228, 196);
+    border-radius: 1rem;
+    margin: 0 0.5rem;
+}
