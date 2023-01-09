@@ -1,6 +1,6 @@
 import React from 'react'
-import Content from "./content/content.js"
-import Sidebar from "./sidebar/sidebar.js"
+import Content from "./content/content"
+import Sidebar from "./sidebar/sidebar"
 import "./body.css"
 
 const Body = () => {
