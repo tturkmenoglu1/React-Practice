@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+import "./options.css";
 
 const Options = () => {
   return (
-    <div>Options</div>
-  )
-}
+    <div className="options">
+      <div className="ex"></div>
+      <div className="ex"></div>
+      <div className="ex"></div>
+      <div className="ex"></div>
+      <div className="ex"></div>
+    </div>
+  );
+};
 
-export default Options
+export default Options;

@@ -3,7 +3,7 @@ div.content{
     background-color: rgb(235, 0, 51);
     border-radius: 1rem;
     height: 30rem;
-    width: 43%;
+    padding: 2rem;
     flex: 4;
     
     box-shadow: 0px 5px 15px 1px rgb(204, 204, 204);
