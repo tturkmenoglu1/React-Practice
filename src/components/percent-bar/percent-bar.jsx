@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { Button, ButtonGroup, ProgressBar } from 'react-bootstrap'
-import { AiFillMinusCircle, AiFillPlusCircle} from "react-icons/ai";
+import { Button, ButtonGroup, Container, ProgressBar } from 'react-bootstrap'
+import { AiFillMinusCircle, AiFillPlusCircle, AiOutlinePlusCircle} from "react-icons/ai";
 
 const PercentBar = () => {
   
@@ -8,22 +8,23 @@ const PercentBar = () => {
 
   const isValid = (value) => {
     if (value < 0) value = 0;
+    if (value > 100) value = 100;
     setindicator(value)
   }
 
   return (
-    <>
+    <Container className='mt-5'>
       <ButtonGroup>
           <Button variant="info" onClick={()=> isValid(indicator+10)}>
-              +
+              <AiFillPlusCircle className='fs-3'/>
           </Button>
           <Button variant='danger' onClick={()=> isValid(indicator-10)}>
-              <AiFillMinusCircle/>
-          </Button>
+              <AiFillMinusCircle className='fs-3'/>
+        </Button>
       </ButtonGroup>
 
-      <ProgressBar now={indicator} label={`${now}%`} />
-    </>
+      <ProgressBar className='mt-2' now={indicator} label={`${indicator}%`} />
+    </Container>
   )
 }
 
