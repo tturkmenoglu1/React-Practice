@@ -15,10 +15,10 @@ const PercentBar = () => {
   return (
     <Container className='mt-5'>
       <ButtonGroup>
-          <Button variant="info" onClick={()=> isValid(indicator+10)}>
+          <Button variant="info" onClick={()=> isValid((prev)=> prev+10)}>
               <AiFillPlusCircle className='fs-3'/>
           </Button>
-          <Button variant='danger' onClick={()=> isValid(indicator-10)}>
+          <Button variant='danger' onClick={()=> isValid((prev)=> prev-10)}>
               <AiFillMinusCircle className='fs-3'/>
         </Button>
       </ButtonGroup>
