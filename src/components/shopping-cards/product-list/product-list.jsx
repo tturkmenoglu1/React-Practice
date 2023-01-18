@@ -4,7 +4,7 @@ import data from "./data.json"
 
 const ProductList = () => {
   return (
-      <div className='mx-3 d-flex'>
+      <div className='container d-flex'>
           {
               data.map((card) => (
                   <ProductCard
