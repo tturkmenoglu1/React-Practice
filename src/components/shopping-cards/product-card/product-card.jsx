@@ -13,14 +13,25 @@ const ProductCard = ({ title, image, price, discount, rate }) => {
     return rates
   }
 
+  const priceCal = () => {
+    let lastPrice;
+      
+    if (discount > 0) {
+      lastPrice = Math.round(price - (price * discount / 100)).toFixed(2)
+      return `<del>${price}</del>`, lastPrice;
+    }
+    else return price.toFixed(2)
+    
+  }
+
   return (
     <Card style={{ width: '18rem' }} className="card">
-      <Card.Text className='label'>{discount>0 ? discount : ""}</Card.Text>
+      <Card.Text className='label'>{discount>0 ? `-${discount}%` : ""}</Card.Text>
       <Card.Img variant="top" src={image} />
       <Card.Body className='body'>
-        <Card.Text>{rateCal()}</Card.Text>
+        <Card.Text className='rate'>{rateCal()}</Card.Text>
         <Card.Title text-center>{title}</Card.Title>
-        <Card.Text>{price}</Card.Text>
+        <Card.Text className='price'>${priceCal()}</Card.Text>
       </Card.Body>
     </Card>
   )
