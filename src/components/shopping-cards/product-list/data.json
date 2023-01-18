@@ -3,8 +3,8 @@
 		"id": 1,
 		"title":"Men's Shirt",
 		"image":"image2.jpg",
-		"price":99.00,
-		"discount":0,
+		"price":79.00,
+		"discount":15,
 		"rate":4
 	},
 	{
@@ -20,7 +20,7 @@
 		"title":"Men's Jacket",
 		"image":"image3.jpg",
 		"price":65.90,
-		"discount":20,
+		"discount":0,
 		"rate":5
 	},
 	{
@@ -36,7 +36,7 @@
 		"title":"Men's Coats",
 		"image":"image5.jpg",
 		"price":89.90,
-		"discount":0,
+		"discount":20,
 		"rate":5
 	}
 ]

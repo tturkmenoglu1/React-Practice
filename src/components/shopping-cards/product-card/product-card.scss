@@ -1,6 +1,18 @@
 
 .card{
     margin: 1rem 0.5rem;
+    .label{
+        position: absolute;
+        left: 0.5rem;
+        top: 0.5rem;
+        background-color: rgb(101, 163, 0);
+        color: white;
+        width: 3rem;
+        text-align: center;
+        font-size: 1rem;
+        border-radius: 0.5rem;
+    }
+
     .body{
     text-align: center;
     }

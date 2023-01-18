@@ -15,7 +15,7 @@ const ProductCard = ({ title, image, price, discount, rate }) => {
 
   return (
     <Card style={{ width: '18rem' }} className="card">
-      <FormLabel>{discount}</FormLabel>
+      <Card.Text className='label'>{discount>0 ? discount : ""}</Card.Text>
       <Card.Img variant="top" src={image} />
       <Card.Body className='body'>
         <Card.Text>{rateCal()}</Card.Text>
